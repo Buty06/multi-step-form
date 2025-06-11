@@ -1,12 +1,8 @@
-import { HomeImputs } from "./HomeImputs";
+import { HomeImputs } from "./FormImputs";
 
-const submitEvent = (event: React.MouseEvent) => {
-  console.log(event);
-};
-
-export const HomeMainForm = () => {
+export const MainForm = () => {
   return (
-    <form onClick={submitEvent}>
+    <form>
       {/* Inputs Components */}
       <HomeImputs
         id="1"

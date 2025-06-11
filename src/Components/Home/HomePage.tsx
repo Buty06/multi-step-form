@@ -1,18 +1,18 @@
-import { HomeMain } from "./HomeMain";
-import { HomeNavBar } from "./HomeNavBar";
+import { Footer } from "./Footer";
+import { Main } from "./Main";
+import { NavBar } from "./NavBar";
 
 export const HomePage = () => {
   return (
     <>
       {/* Nav Barr */}
-      <HomeNavBar></HomeNavBar>
+      <NavBar></NavBar>
 
-      {/* Title and description */}
-      <HomeMain></HomeMain>
-
-      {/* Form with personal information */}
+      {/* Title ,description and form */}
+      <Main></Main>
 
       {/* Next Button */}
+      <Footer notBackButton={true}></Footer>
     </>
   );
 };

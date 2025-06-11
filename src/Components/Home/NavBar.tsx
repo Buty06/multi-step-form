@@ -1,6 +1,6 @@
 import { Links } from "./Links";
 
-export const HomeNavBar = () => {
+export const NavBar = () => {
   return (
     <aside>
       {/*Links that connect to different pages, thi links are components to*/}
