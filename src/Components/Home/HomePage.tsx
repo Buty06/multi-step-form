@@ -1,6 +1,7 @@
-import { Footer } from "./Footer";
+import { Footer } from "../Footer";
 import { Main } from "./Main";
 import { NavBar } from "./NavBar";
+import "../../Styles/GeneralStyles.css";
 
 export const HomePage = () => {
   return (
