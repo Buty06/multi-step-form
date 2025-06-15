@@ -1,7 +1,7 @@
 import { useRef } from "react";
-import { Footer } from "./Footer";
-import { Main } from "./Main";
-import { NavBar } from "./NavBar";
+import { Footer } from "./Components/Home/Footer";
+import { Main } from "./Components/Home/Main";
+import { NavBar } from "./Components/Home/NavBar";
 
 export const HomePage = () => {
   const formRef = useRef<HTMLFormElement>(null);

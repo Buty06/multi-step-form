@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
-import { HomePage } from "./Components/Home/HomePage";
+import { HomePage } from "./HomePage";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <StrictMode>
