@@ -3,7 +3,7 @@ interface Props {
   handlerExternalSubmit: (event: React.FormEvent) => void;
 }
 
-export const HomeFooter: React.FC<Props> = ({
+export const Footer: React.FC<Props> = ({
   backButtonIsNotRequired,
   handlerExternalSubmit,
 }) => {

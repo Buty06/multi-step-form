@@ -1,6 +1,6 @@
 import { useRef } from "react";
-import { HomeFooter } from "./HomeFooter";
-import { HomeMain } from "./HomeMain";
+import { Footer } from "./Footer";
+import { Main } from "./Main";
 import { NavBar } from "./NavBar";
 
 export const HomePage = () => {
@@ -16,13 +16,13 @@ export const HomePage = () => {
       <NavBar></NavBar>
 
       {/* Title and description */}
-      <HomeMain formRef={formRef}></HomeMain>
+      <Main formRef={formRef}></Main>
 
       {/* Footer */}
-      <HomeFooter
+      <Footer
         backButtonIsNotRequired
         handlerExternalSubmit={handlerExternalSubmit}
-      ></HomeFooter>
+      ></Footer>
     </>
   );
 };

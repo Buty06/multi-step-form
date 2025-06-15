@@ -1,4 +1,4 @@
-import { HomeInputs } from "./HomeInputs";
+import { HomeInputs } from "./Inputs";
 
 interface Props {
   formRef: React.RefObject<HTMLFormElement | null>;
