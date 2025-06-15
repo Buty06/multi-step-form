@@ -5,7 +5,7 @@ interface Props {
   type: string;
 }
 
-export const HomeImputs: React.FC<Props> = ({
+export const HomeInputs: React.FC<Props> = ({
   id,
   labelValue,
   placeholderValue,

@@ -1,21 +1,18 @@
-import { useRef } from "react";
 import { HomeMainDescription } from "./HomeMainDescription";
 import { HomeMainForm } from "./HomeMainForm";
 
-export const HomeMain = () => {
-  const formRef = useRef<HTMLFormElement>(null);
+interface Props {
+  formRef: React.RefObject<HTMLFormElement | null>;
+}
 
-  if (formRef.current) {
-    console.log(formRef.current);
-  }
-
+export const HomeMain: React.FC<Props> = ({ formRef }) => {
   return (
     <main>
       {/* Description */}
       <HomeMainDescription></HomeMainDescription>
 
       {/* Form */}
-      <HomeMainForm ref={formRef}> </HomeMainForm>
+      <HomeMainForm formRef={formRef}></HomeMainForm>
     </main>
   );
 };

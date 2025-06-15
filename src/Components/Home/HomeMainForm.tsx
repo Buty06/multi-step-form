@@ -1,33 +1,33 @@
-import { HomeImputs } from "./HomeImputs";
+import { HomeInputs } from "./HomeInputs";
 
-const submitEvent = (event: React.MouseEvent) => {
-  console.log(event);
-};
+interface Props {
+  formRef: React.RefObject<HTMLFormElement | null>;
+}
 
-export const HomeMainForm = () => {
+export const HomeMainForm: React.FC<Props> = ({ formRef }) => {
   return (
-    <form onClick={submitEvent}>
+    <form ref={formRef}>
       {/* Inputs Components */}
-      <HomeImputs
+      <HomeInputs
         id="1"
         labelValue="Name"
         placeholderValue="e.g. Stephen King"
         type="text"
-      ></HomeImputs>
+      ></HomeInputs>
 
-      <HomeImputs
+      <HomeInputs
         id="2"
         labelValue="Email Address"
         placeholderValue="e.g. stephenking@lorem.com"
         type="email"
-      ></HomeImputs>
+      ></HomeInputs>
 
-      <HomeImputs
+      <HomeInputs
         id="3"
         labelValue="Phone Number"
         placeholderValue="e.g. +1 234 567 890"
         type="tel"
-      ></HomeImputs>
+      ></HomeInputs>
     </form>
   );
 };
