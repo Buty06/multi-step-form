@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { HomeFooter } from "./HomeFooter";
 import { HomeMain } from "./HomeMain";
-import { HomeNavBar } from "./HomeNavBar";
+import { NavBar } from "./NavBar";
 
 export const HomePage = () => {
   const formRef = useRef<HTMLFormElement>(null);
@@ -13,7 +13,7 @@ export const HomePage = () => {
   return (
     <>
       {/* Nav Barr */}
-      <HomeNavBar></HomeNavBar>
+      <NavBar></NavBar>
 
       {/* Title and description */}
       <HomeMain formRef={formRef}></HomeMain>

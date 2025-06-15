@@ -4,7 +4,7 @@ interface Props {
   formRef: React.RefObject<HTMLFormElement | null>;
 }
 
-export const HomeMainForm: React.FC<Props> = ({ formRef }) => {
+export const MainForm: React.FC<Props> = ({ formRef }) => {
   return (
     <form ref={formRef}>
       {/* Inputs Components */}

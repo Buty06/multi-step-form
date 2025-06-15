@@ -1,4 +1,4 @@
-export const HomeMainDescription = () => {
+export const MainDescription = () => {
   return (
     <header>
       {/* Title */}

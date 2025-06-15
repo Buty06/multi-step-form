@@ -1,5 +1,5 @@
-import { HomeMainDescription } from "./HomeMainDescription";
-import { HomeMainForm } from "./HomeMainForm";
+import { MainDescription } from "./MainDescription";
+import { MainForm } from "./MainForm";
 
 interface Props {
   formRef: React.RefObject<HTMLFormElement | null>;
@@ -9,10 +9,10 @@ export const HomeMain: React.FC<Props> = ({ formRef }) => {
   return (
     <main>
       {/* Description */}
-      <HomeMainDescription></HomeMainDescription>
+      <MainDescription></MainDescription>
 
       {/* Form */}
-      <HomeMainForm formRef={formRef}></HomeMainForm>
+      <MainForm formRef={formRef}></MainForm>
     </main>
   );
 };
