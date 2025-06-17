@@ -5,8 +5,8 @@ interface Props {
 
 export const Links: React.FC<Props> = ({ value }) => {
   return (
-    <a href="#">
-      <li> {value} </li>
+    <a href="#" className="aside_links">
+      <li className="aside_list_item"> {value} </li>
     </a>
   );
 };

@@ -1,0 +1,37 @@
+.aside {
+  background: url("../../assets/images/bg-sidebar-mobile.svg") no-repeat;
+  background-size: cover;
+  height: 11rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aside_list {
+  display: flex;
+  justify-content: space-between;
+  width: 15rem;
+}
+
+.aside_links {
+  list-style: none;
+  text-decoration: none;
+  color: aliceblue;
+  border: 3px solid white;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  display: grid;
+  place-items: center;
+  transition: 0.3s ease-in;
+
+  &:hover {
+    background-color: rgb(174, 206, 231);
+    color: rgb(15, 15, 15);
+  }
+}
+
+.aside_list_item {
+  font-size: 1.5rem;
+  font-weight: 800;
+}

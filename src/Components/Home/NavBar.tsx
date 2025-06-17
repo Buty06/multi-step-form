@@ -1,10 +1,11 @@
 import { Links } from "./Links";
+import "../../Styles/Home/NavBar.css";
 
 export const NavBar = () => {
   return (
-    <aside>
+    <aside className="aside">
       {/*Links that connect to different pages, thi links are components to*/}
-      <ol>
+      <ol className="aside_list">
         <Links value={1}></Links>
         <Links value={2}></Links>
         <Links value={3}></Links>
