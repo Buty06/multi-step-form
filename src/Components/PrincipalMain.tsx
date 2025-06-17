@@ -1,6 +1,6 @@
 import { MainDescription } from "./Home/MainDescription";
 import { MainForm } from "./Home/MainForm";
-import "../../Styles/Home/Main.css";
+import "../Styles/Home/Main.css";
 
 interface Props {
   formRef?: React.RefObject<HTMLFormElement | null>;

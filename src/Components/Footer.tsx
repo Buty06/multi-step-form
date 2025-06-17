@@ -1,4 +1,4 @@
-import "../../Styles/Home/Footer.css";
+import "../Styles/Home/Footer.css";
 
 interface Props {
   backButtonIsNotRequired?: boolean;

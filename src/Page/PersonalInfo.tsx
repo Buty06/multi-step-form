@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { Footer } from "../Components/Footer";
 import { PrincipalMain } from "../Components/PrincipalMain";
 import { NavBar } from "../Components/NavBar";
-import "./Styles/GeneralStyles.css";
+import "../Styles/GeneralStyles.css";
 
 export const PersonalInfo = () => {
   const formRef = useRef<HTMLFormElement>(null);
