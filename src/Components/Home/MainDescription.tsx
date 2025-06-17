@@ -1,11 +1,13 @@
 export const MainDescription = () => {
   return (
-    <header>
+    <header className="main_header">
       {/* Title */}
-      <h1>Personal info</h1>
+      <h1 className="main_title">Personal info</h1>
 
       {/* Description */}
-      <p>Please provide your name, email address, and phone number.</p>
+      <p className="main_description">
+        Please provide your name, email address, and phone number.
+      </p>
     </header>
   );
 };

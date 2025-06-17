@@ -1,20 +1,25 @@
 interface Props {
-  id: string;
   labelValue: string;
   placeholderValue: string;
   type: string;
 }
 
-export const HomeInputs: React.FC<Props> = ({
-  id,
+export const Inputs: React.FC<Props> = ({
   labelValue,
   placeholderValue,
   type,
 }) => {
   return (
     <>
-      <label htmlFor={id}> {labelValue} </label>
-      <input type={type} id={id} placeholder={placeholderValue} required />
+      <label className="main_label">
+        {labelValue}
+        <input
+          type={type}
+          placeholder={placeholderValue}
+          required
+          className="main_input"
+        />
+      </label>
     </>
   );
 };

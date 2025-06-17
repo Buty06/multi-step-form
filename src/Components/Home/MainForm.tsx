@@ -1,4 +1,4 @@
-import { HomeInputs } from "./Inputs";
+import { Inputs } from "./Inputs";
 
 interface Props {
   formRef: React.RefObject<HTMLFormElement | null>;
@@ -6,28 +6,25 @@ interface Props {
 
 export const MainForm: React.FC<Props> = ({ formRef }) => {
   return (
-    <form ref={formRef}>
+    <form ref={formRef} className="main_form">
       {/* Inputs Components */}
-      <HomeInputs
-        id="1"
+      <Inputs
         labelValue="Name"
         placeholderValue="e.g. Stephen King"
         type="text"
-      ></HomeInputs>
+      ></Inputs>
 
-      <HomeInputs
-        id="2"
+      <Inputs
         labelValue="Email Address"
         placeholderValue="e.g. stephenking@lorem.com"
         type="email"
-      ></HomeInputs>
+      ></Inputs>
 
-      <HomeInputs
-        id="3"
+      <Inputs
         labelValue="Phone Number"
         placeholderValue="e.g. +1 234 567 890"
         type="tel"
-      ></HomeInputs>
+      ></Inputs>
     </form>
   );
 };
