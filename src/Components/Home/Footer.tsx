@@ -1,3 +1,5 @@
+import "../../Styles/Home/Footer.css";
+
 interface Props {
   backButtonIsNotRequired?: boolean;
   handlerExternalSubmit: (event: React.FormEvent) => void;
@@ -8,12 +10,14 @@ export const Footer: React.FC<Props> = ({
   handlerExternalSubmit,
 }) => {
   return (
-    <footer>
+    <footer className="footer">
       {/* Next Button */}
 
       {!backButtonIsNotRequired && <button>Go Back</button>}
 
-      <button onClick={handlerExternalSubmit}>Next Step</button>
+      <button onClick={handlerExternalSubmit} className="footer_next_button">
+        Next Step
+      </button>
     </footer>
   );
 };
