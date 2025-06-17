@@ -2,7 +2,7 @@ import { Inputs } from "./Inputs";
 import "../../Styles/Home/MainForm.css";
 
 interface Props {
-  formRef: React.RefObject<HTMLFormElement | null>;
+  formRef?: React.RefObject<HTMLFormElement | null>;
 }
 
 export const MainForm: React.FC<Props> = ({ formRef }) => {
