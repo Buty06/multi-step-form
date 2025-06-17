@@ -4,7 +4,7 @@
   width: 100%;
   background-color: rgb(255, 255, 255);
   padding: 1.5rem;
-  height: 6rem;
+  height: 3.7dvh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,8 +14,7 @@
 .footer_next_button {
   background-color: rgb(0, 36, 104);
   color: rgb(255, 255, 255);
-  font-size: 1.5rem;
   font-weight: 500;
-  padding: 1rem;
+  padding: 0.7rem;
   border-radius: 7px;
 }
