@@ -24,7 +24,7 @@
   border-radius: 100%;
   display: grid;
   place-items: center;
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
 
   &:hover {
     background-color: rgb(174, 206, 231);

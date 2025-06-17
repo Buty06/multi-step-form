@@ -13,11 +13,11 @@ export const Footer: React.FC<Props> = ({
     <footer className="footer">
       {/* Next Button */}
 
-      {!backButtonIsNotRequired && <button>Go Back</button>}
-
       <button onClick={handlerExternalSubmit} className="footer_next_button">
         Next Step
       </button>
+
+      {!backButtonIsNotRequired && <button>Go Back</button>}
     </footer>
   );
 };
