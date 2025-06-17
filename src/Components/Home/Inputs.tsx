@@ -1,3 +1,5 @@
+import "../../Styles/Home/Inputs.css";
+
 interface Props {
   labelValue: string;
   placeholderValue: string;

@@ -1,4 +1,5 @@
 import { Inputs } from "./Inputs";
+import "../../Styles/Home/MainForm.css";
 
 interface Props {
   formRef: React.RefObject<HTMLFormElement | null>;

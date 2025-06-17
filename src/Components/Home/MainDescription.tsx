@@ -1,3 +1,5 @@
+import "../../Styles/Home/MainDescription.css";
+
 export const MainDescription = () => {
   return (
     <header className="main_header">

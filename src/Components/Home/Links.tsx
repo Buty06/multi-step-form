@@ -1,3 +1,5 @@
+import "../../Styles/Home/Links.css";
+
 // !Cuando pongas una properti tienes que ponerle el tipo de dato a esa props
 interface Props {
   value: number;
