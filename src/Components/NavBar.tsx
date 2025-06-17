@@ -4,20 +4,27 @@ import "../Styles/NavBar.css";
 export const NavBar = () => {
   return (
     <aside className="aside">
-      {/*Links that connect to different pages, thi links are components to*/}
       <ol className="aside_list">
-        <Link to={"/info"} className="aside_links">
-          1
-        </Link>
-        <Link to={"/plans"} className="aside_links">
-          2
-        </Link>
-        <Link to={"/addons"} className="aside_links">
-          3
-        </Link>
-        <Link to={"/finishing"} className="aside_links">
-          4
-        </Link>
+        <li>
+          <Link to="/" className="aside_links">
+            1
+          </Link>
+        </li>
+        <li>
+          <Link to="/plans" className="aside_links">
+            2
+          </Link>
+        </li>
+        <li>
+          <Link to="/addons" className="aside_links">
+            3
+          </Link>
+        </li>
+        <li>
+          <Link to="/finishing" className="aside_links">
+            4
+          </Link>
+        </li>
       </ol>
     </aside>
   );

@@ -8,15 +8,11 @@ import { Finishing } from "./Page/Finishing";
 export const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<Layout></Layout>}>
-        <Route
-          path="/info"
-          index
-          element={<PersonalInfo></PersonalInfo>}
-        ></Route>
-        <Route path="/plans" element={<Plans></Plans>}></Route>
-        <Route path="/addons" element={<Addons></Addons>}></Route>
-        <Route path="/finishing" element={<Finishing></Finishing>}></Route>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<PersonalInfo />} />
+        <Route path="plans" element={<Plans />} />
+        <Route path="addons" element={<Addons />} />
+        <Route path="finishing" element={<Finishing />} />
       </Route>
     </Routes>
   );

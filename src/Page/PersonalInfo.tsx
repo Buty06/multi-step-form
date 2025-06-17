@@ -1,7 +1,5 @@
 import { useRef } from "react";
-import { Footer } from "../Components/Footer";
 import { PrincipalMain } from "../Components/PrincipalMain";
-import { NavBar } from "../Components/NavBar";
 import "../Styles/GeneralStyles.css";
 
 export const PersonalInfo = () => {
@@ -13,17 +11,9 @@ export const PersonalInfo = () => {
 
   return (
     <>
-      {/* Nav Barr */}
-      <NavBar></NavBar>
-
-      {/* Title and description */}
-      <PrincipalMain formRef={formRef}></PrincipalMain>
-
-      {/* Footer */}
-      <Footer
-        backButtonIsNotRequired
-        handlerExternalSubmit={handlerExternalSubmit}
-      ></Footer>
+      {/* Solo el contenido específico de esta página */}
+      <PrincipalMain formRef={formRef} />
+      {/* Si necesitas un footer específico con props, considera manejarlo desde Layout o pasar datos vía contexto */}
     </>
   );
 };
