@@ -2,11 +2,11 @@ import { useRef } from "react";
 import { Footer } from "./Components/Home/Footer";
 import { Main } from "./Components/Home/Main";
 import { NavBar } from "./Components/NavBar";
-import { Plans } from "./Components/Page/Plans";
+import { Plans } from "./Page/Plans";
 import "./Styles/GeneralStyles.css";
 import { Route, Routes } from "react-router-dom";
-import { Addons } from "./Components/Page/Addons";
-import { Finishing } from "./Components/Page/Finishing";
+import { Addons } from "./Page/Addons";
+import { Finishing } from "./Page/Finishing";
 
 export const HomePage = () => {
   const formRef = useRef<HTMLFormElement>(null);
