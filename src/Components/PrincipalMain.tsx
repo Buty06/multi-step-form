@@ -1,19 +1,19 @@
-import { MainDescription } from "./Home/MainDescription";
-import { MainForm } from "./Home/MainForm";
+import { Route, Routes } from "react-router-dom";
+import { Plans } from "../Page/Plans";
+import { PersonalInfo } from "../Page/PersonalInfo";
+import { Addons } from "../Page/Addons";
+import { Finishing } from "../Page/Finishing";
 import "../Styles/Home/Main.css";
 
-interface Props {
-  formRef?: React.RefObject<HTMLFormElement | null>;
-}
-
-export const PrincipalMain: React.FC<Props> = ({ formRef }) => {
+export const PrincipalMain = () => {
   return (
     <main className="main">
-      {/* Description */}
-      <MainDescription></MainDescription>
-
-      {/* Form */}
-      <MainForm formRef={formRef}></MainForm>
+      <Routes>
+        <Route index element={<PersonalInfo />}></Route>
+        <Route path="plans" element={<Plans />}></Route>
+        <Route path="addons" element={<Addons />}></Route>
+        <Route path="finishing" element={<Finishing />}></Route>
+      </Routes>
     </main>
   );
 };

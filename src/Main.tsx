@@ -5,7 +5,8 @@ import { App } from "./App";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="multi-step-form">
+      {/*basename es para poner la ruta basica en la que se alejora mi proyecto */}
       <App></App>
     </BrowserRouter>
   </StrictMode>
