@@ -15,7 +15,6 @@
 }
 
 .aside_links {
-  list-style: none;
   text-decoration: none;
   color: aliceblue;
   border: 3px solid white;
@@ -32,4 +31,7 @@
     background-color: rgb(174, 206, 231);
     color: rgb(15, 15, 15);
   }
+}
+.aside_list_items {
+  list-style: none;
 }

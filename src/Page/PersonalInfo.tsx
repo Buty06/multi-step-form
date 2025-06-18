@@ -5,9 +5,9 @@ import "../Styles/GeneralStyles.css";
 export const PersonalInfo = () => {
   const formRef = useRef<HTMLFormElement>(null);
 
-  const handlerExternalSubmit = () => {
-    formRef.current?.submit();
-  };
+  // const handlerExternalSubmit = () => {
+  //   formRef.current?.submit();
+  // };
 
   return (
     <>
