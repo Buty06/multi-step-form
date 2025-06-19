@@ -1,30 +1,57 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "../Styles/NavBar.css";
 
 export const NavBar = () => {
+  const { pathname } = useLocation();
+
   return (
     <aside className="aside">
       <ol className="aside_list">
-        <li className="aside_list_items">
-          <Link to="/" className="aside_links">
+        <Link to="/" className="aside_links">
+          <li
+            className={
+              pathname === "/" ? "aside_list_items active" : "aside_list_items"
+            }
+          >
             1
-          </Link>
-        </li>
-        <li className="aside_list_items">
-          <Link to="/plans" className="aside_links">
+          </li>
+        </Link>
+
+        <Link to="/plans" className="aside_links">
+          <li
+            className={
+              pathname === "/plans"
+                ? "aside_list_items active"
+                : "aside_list_items"
+            }
+          >
             2
-          </Link>
-        </li>
-        <li className="aside_list_items">
-          <Link to="/addons" className="aside_links">
+          </li>
+        </Link>
+
+        <Link to="/addons" className="aside_links">
+          <li
+            className={
+              pathname === "/addons"
+                ? "aside_list_items active"
+                : "aside_list_items"
+            }
+          >
             3
-          </Link>
-        </li>
-        <li className="aside_list_items">
-          <Link to="/finishing" className="aside_links">
+          </li>
+        </Link>
+
+        <Link to="/finishing" className="aside_links">
+          <li
+            className={
+              pathname === "/finishing"
+                ? "aside_list_items active"
+                : "aside_list_items"
+            }
+          >
             4
-          </Link>
-        </li>
+          </li>
+        </Link>
       </ol>
     </aside>
   );
