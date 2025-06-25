@@ -11,4 +11,5 @@
   flex-direction: column;
   gap: 2rem;
   color: rgb(19, 31, 65);
+  box-shadow: 2px 2px 10px rgba(128, 128, 128, 0.439);
 }
