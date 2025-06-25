@@ -6,11 +6,11 @@ interface Props {
 
 export const Plan: React.FC<Props> = ({ title, price, src }) => {
   return (
-    <article>
+    <article className="plan">
       <img src={src} alt="Icon" />
 
-      <section>
-        <h2> {title} </h2>
+      <section className="plan_section">
+        <h2 className="plan_title"> {title} </h2>
         <p> {price} </p>
       </section>
     </article>
