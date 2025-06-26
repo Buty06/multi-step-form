@@ -1,0 +1,67 @@
+.selection {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-color: rgb(227, 227, 227);
+  padding: 1rem 2rem;
+  border-radius: 7px;
+}
+
+.selection_btn {
+  font-size: 1rem;
+  font-weight: 500;
+  color: gray;
+  background-color: transparent;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: rgb(57, 10, 114);
+  }
+}
+
+.selector {
+  width: 2.5rem;
+  height: 1.2rem;
+  background-color: rgb(10, 29, 136);
+  border-radius: 15px;
+  padding: 0.2rem;
+}
+
+.selector_ball {
+  width: 0.8rem;
+  height: 100%;
+  border-radius: 50%;
+  background-color: aliceblue;
+}
+
+.ballMoveToRigth {
+  animation: ballMoveToRigth 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.ballMoveToLeft {
+  animation: ballMoveToLeft 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes ballMoveToRigth {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(160%);
+  }
+}
+
+@keyframes ballMoveToLeft {
+  from {
+    transform: translateX(160%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}

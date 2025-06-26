@@ -5,6 +5,7 @@ import arcade from "../assets/images/icon-arcade.svg";
 import advanced from "../assets/images/icon-advanced.svg";
 import pro from "../assets/images/icon-pro.svg";
 import "../Styles/Plans/Plan.css";
+import { Selection } from "../Components/Plans/Selection";
 
 export const Plans = () => {
   return (
@@ -18,6 +19,8 @@ export const Plans = () => {
         <Plan title={plans[1].title} price={plans[1].price} src={advanced} />
         <Plan title={plans[2].title} price={plans[2].price} src={pro} />
       </section>
+
+      <Selection />
     </>
   );
 };
