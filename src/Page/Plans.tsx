@@ -37,7 +37,7 @@ export const Plans = () => {
         />
         <Plan
           title={planes[jsonDecision].plan[2].title}
-          price={planes[jsonDecision].plan[2].title}
+          price={planes[jsonDecision].plan[2].price}
           src={pro}
         />
       </section>

@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import "../../Styles/Plans/Selection.css";
+import { TextContext } from "../../Context/TextContext";
 
 export const Selection = () => {
   const [decision, setDecision] = useState("");
+  const { setJsonDecision } = useContext(TextContext)!;
 
   const getClassName = () => {
     if (!decision) return "selector_ball";
@@ -17,7 +19,10 @@ export const Selection = () => {
       <button
         className="selection_btn"
         style={decision === "left" ? { color: "rgb(44, 9, 87)" } : {}}
-        onClick={() => setDecision("left")}
+        onClick={() => {
+          setDecision("left");
+          setJsonDecision("month");
+        }}
       >
         Monthly
       </button>
@@ -29,7 +34,10 @@ export const Selection = () => {
       <button
         className="selection_btn"
         style={decision === "rigth" ? { color: "rgb(44, 9, 87)" } : {}}
-        onClick={() => setDecision("rigth")}
+        onClick={() => {
+          setDecision("rigth");
+          setJsonDecision("year");
+        }}
       >
         Yearly
       </button>
