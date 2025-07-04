@@ -17,7 +17,8 @@
       "description": "Double-check everything looks OK before confirming."
     }
   },
-  "plans": [
+  "month": {
+    "plans": [
     {
       "title": "Arcade",
       "price": "$9/mo"
@@ -31,4 +32,25 @@
       "price": "$$15/mo"
     }
   ]
+  },
+  "year":{
+    "plans": [
+    {
+      "title": "Arcade",
+      "price": "$90/yr",
+      "free": "2 month free"
+    },
+    {
+      "title": "Advanced",
+      "price": "$120/yr",
+      "free": "2 month free"
+    },
+    {
+      "title": "Pro",
+      "price": "$150/yr",
+      "free": "2 month free"
+    }
+  ]
+  }
+  
 }
