@@ -18,121 +18,124 @@
     }
   },
 
-  "month": {
-    "plans": [
-      {
-        "title": "Arcade",
-        "price": "$9/mo"
-      },
+  "planes": {
+    "month": {
+      "addons": [
+        {
+          "title": "Online service",
+          "description": "Access to multiplayer games",
+          "price": "+$1/mo"
+        },
 
-      {
-        "title": "Advanced",
-        "price": "$12/mo"
-      },
+        {
+          "title": "Larger storage",
+          "description": "Extra 1TB of cloud save",
+          "price": "+$2/mo"
+        },
 
-      {
-        "title": "Pro",
-        "price": "$$15/mo"
-      }
-    ],
-    "addons": [
-      {
-        "title": "Online service",
-        "description": "Access to multiplayer games",
-        "price": "+$1/mo"
-      },
-      
-      {
-        "title": "Larger storage",
-        "description": "Extra 1TB of cloud save",
-        "price": "+$2/mo"
-      },
+        {
+          "title": "Customizable Profile",
+          "description": "Custom theme on your profile",
+          "price": "+$2/mo"
+        }
+      ],
 
-      {
-        "title": "Customizable Profile",
-        "description": "Custom theme on your profile",
-        "price": "+$2/mo"
-      }
-    ],
+      "finishing": [
+        {
+          "title": "Arcade (Monthly)",
+          "subtitle": "Change",
+          "price": "$9/mo"
+        },
 
-    "finishing":[
-      {
-        "title": "Arcade (Monthly)",
-        "subtitle": "Change",
-        "price": "$9/mo"
-      },
+        {
+          "service1": "Online service",
+          "service2": "Large storage",
+          "addPrice1": "+$1/mo",
+          "addPrice2": "+$2/mo"
+        },
 
-      {
-        "service1": "Online service",
-        "service2": "Large storage",
-        "addPrice1": "+$1/mo",
-        "addPrice2": "+$2/mo"
-      },
+        {
+          "title": "Total (per month)",
+          "totalPrice": "+$12/mo"
+        }
+      ],
 
-      {
-        "title": "Total (per month)",
-        "totalPrice": "+$12/mo"
-      }
-    ]
-  },
+      "plan": [
+        {
+          "title": "Arcade",
+          "price": "$9/mo"
+        },
 
-  "year": {
-    "plans": [
-      {
-        "title": "Arcade",
-        "price": "$90/yr",
-        "free": "2 month free"
-      },
-      {
-        "title": "Advanced",
-        "price": "$120/yr",
-        "free": "2 month free"
-      },
-      {
-        "title": "Pro",
-        "price": "$150/yr",
-        "free": "2 month free"
-      }
-    ],
-    
-    "addons": [
-      {
-        "title": "Online service",
-        "description": "Access to multiplayer games",
-        "price": "+$10/yr"
-      },
-      
-      {
-        "title": "Larger storage",
-        "description": "Extra 1TB of cloud save",
-        "price": "+$20/yr"
-      },
+        {
+          "title": "Advanced",
+          "price": "$12/mo"
+        },
 
-      {
-        "title": "Customizable Profile",
-        "description": "Custom theme on your profile",
-        "price": "+$20/yr"
-      }
-    ],
+        {
+          "title": "Pro",
+          "price": "$$15/mo"
+        }
+      ]
+    },
 
-    "finishing":[
-      {
-        "title": "Arcade (Yearly)",
-        "subtitle": "Change",
-        "price": "$90/mo"
-      },
+    "year": {
+      "plan": [
+        {
+          "title": "Arcade",
+          "price": "$90/yr",
+          "free": "2 month free"
+        },
+        {
+          "title": "Advanced",
+          "price": "$120/yr",
+          "free": "2 month free"
+        },
+        {
+          "title": "Pro",
+          "price": "$150/yr",
+          "free": "2 month free"
+        }
+      ],
 
-      {
-        "service1": "Online service",
-        "service2": "Large storage",
-        "addPrice1": "+$10/mo",
-        "addPrice2": "+$20/mo"
-      },
+      "addons": [
+        {
+          "title": "Online service",
+          "description": "Access to multiplayer games",
+          "price": "+$10/yr"
+        },
 
-      {
-        "title": "Total (per year)",
-        "totalPrice": "+$120/mo"
-      }
-    ]
+        {
+          "title": "Larger storage",
+          "description": "Extra 1TB of cloud save",
+          "price": "+$20/yr"
+        },
+
+        {
+          "title": "Customizable Profile",
+          "description": "Custom theme on your profile",
+          "price": "+$20/yr"
+        }
+      ],
+
+      "finishing": [
+        {
+          "title": "Arcade (Yearly)",
+          "subtitle": "Change",
+          "price": "$90/mo"
+        },
+
+        {
+          "service1": "Online service",
+          "service2": "Large storage",
+          "addPrice1": "+$10/mo",
+          "addPrice2": "+$20/mo"
+        },
+
+        {
+          "title": "Total (per year)",
+          "totalPrice": "+$120/mo"
+        }
+      ]
+    }
   }
 }
