@@ -1,3 +1,4 @@
+// Definimos los tipados de las props
 interface Props {
   title: string;
   price: string;

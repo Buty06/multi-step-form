@@ -1,5 +1,5 @@
 // Importamos los componentes de UI del main para renderizarlos de PersonalInfo
-import { MainDescription } from "../Components/PersonalInfo/MainDescription";
+import { MainDescription } from "../Components/MainDescription";
 import { MainForm } from "../Components/PersonalInfo/MainForm";
 
 // Importamos los textos de mis componentes, osea la data
