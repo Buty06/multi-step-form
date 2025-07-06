@@ -1,10 +1,13 @@
-import "./../Styles/Home/MainDescription.css";
+// Importamos los estilos principales de mi MainDescription de la carpeta PersonalInfo en Styles
+import "../../Styles/PersonalInfo/MainDescription.css";
 
+// Definimos los tipos en las propertys donde le decimos que son string
 interface Props {
   title: string;
   description: string;
 }
 
+// Les pasamos las props al componente funcional
 export const MainDescription: React.FC<Props> = ({ title, description }) => {
   return (
     <header className="main_header">

@@ -1,14 +1,13 @@
+// Importamos los inputs, componente UI
 import { Inputs } from "./Inputs";
-import "../../Styles/Home/MainForm.css";
 
-interface Props {
-  formRef?: React.RefObject<HTMLFormElement | null>;
-}
+// Importamos los estilos principales de PersonalInfo
+import "../../Styles/PersonalInfo/MainForm.css";
 
-export const MainForm: React.FC<Props> = ({ formRef }) => {
+export const MainForm: React.FC = () => {
   return (
-    <form ref={formRef} className="main_form">
-      {/* Inputs Components */}
+    <form className="main_form">
+      {/* Les pasamos las propiedades para la estructuracion del input */}
       <Inputs
         labelValue="Name"
         placeholderValue="e.g. Stephen King"

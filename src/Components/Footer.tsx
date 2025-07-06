@@ -1,5 +1,5 @@
 import { useLocation, useNavigate } from "react-router-dom";
-import "../Styles/Home/Footer.css";
+import "../Styles/Footer.css";
 
 const steps = ["/", "/plans", "/addons", "/finishing"];
 

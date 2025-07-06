@@ -1,4 +1,4 @@
-import { MainDescription } from "../Components/MainDescription";
+import { MainDescription } from "../Components/PersonalInfo/MainDescription";
 import { Plan } from "../Components/Plans/Plan";
 import { descriptions, planes as planes } from "../data/textos.json";
 import arcade from "../assets/images/icon-arcade.svg";
