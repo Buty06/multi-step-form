@@ -1,5 +1,5 @@
 // Importamos los estilos principales de mi MainDescription de la carpeta PersonalInfo en Styles
-import "../../Styles/PersonalInfo/MainDescription.css";
+import "../Styles/MainDescription.css";
 
 // Definimos los tipos en las propertys donde le decimos que son string
 interface Props {
