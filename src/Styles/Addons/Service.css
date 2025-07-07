@@ -32,3 +32,7 @@
 .price {
   color: rgb(67, 21, 142);
 }
+
+.active_checkbox {
+  border-color: rgb(67, 21, 142);
+}
