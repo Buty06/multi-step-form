@@ -1,4 +1,4 @@
-import { useContext, useState, type ReactElement, type ReactNode } from "react";
+import { useContext, useState } from "react";
 import "../../Styles/Addons/Service.css";
 import { ReviewContext } from "../../Context/ReviewContext";
 
@@ -10,6 +10,7 @@ interface props {
 
 export const Service: React.FC<props> = ({ title, description, price }) => {
   const [isChecked, setIsChecked] = useState(Boolean);
+
   const { setReview, review } = useContext(ReviewContext)! as {
     setReview: (value: object) => void;
     review: object;
@@ -25,20 +26,26 @@ export const Service: React.FC<props> = ({ title, description, price }) => {
 
     setIsChecked(value);
 
-    isChecked &&
+    if (value) {
       setReview((prev: object) => ({
         ...prev,
         [e.target.name]: reviewService,
       }));
+    } else {
+      setReview((prev: { [key: string]: any }) => {
+        const { [e.target.name]: omit, ...rest } = prev;
+        return rest;
+      });
+    }
   };
-
-  console.log(review);
 
   const active_checkbox = () => {
     if (!isChecked) return "service";
 
     return "service active_checkbox";
   };
+
+  console.log(review);
 
   return (
     <label className={active_checkbox()}>
