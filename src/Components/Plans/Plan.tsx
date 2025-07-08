@@ -9,8 +9,7 @@ interface Props {
 }
 
 export const Plan: React.FC<Props> = ({ title, price, src }) => {
-  const { setReview, review } = useContext(ReviewContext)! as {
-    review: object;
+  const { setReview } = useContext(ReviewContext)! as {
     setReview: (value: object) => void;
   };
 
@@ -22,8 +21,6 @@ export const Plan: React.FC<Props> = ({ title, price, src }) => {
   const sendPlan = () => {
     setReview({ reviewPlan });
   };
-
-  console.log(review);
 
   return (
     <article className="plan" onClick={sendPlan}>
