@@ -10,7 +10,8 @@ interface Props {
 
 export const Plan: React.FC<Props> = ({ title, price, src }) => {
   const { setReview, review } = useContext(ReviewContext)! as {
-    setReview: object;
+    review: object;
+    setReview: (value: object) => void;
   };
 
   const reviewPlan = {
@@ -19,7 +20,7 @@ export const Plan: React.FC<Props> = ({ title, price, src }) => {
   };
 
   const sendPlan = () => {
-    setReview(reviewPlan);
+    setReview({ reviewPlan });
   };
 
   console.log(review);

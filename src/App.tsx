@@ -7,6 +7,7 @@ import { PrincipalMain } from "./Components/PrincipalMain";
 
 // Y por ultimo importamos el provider, es una herramienta que viene de el useContext, es el que proveee el contexto general de mi web, en este caso provee si es mensual o anual la configuracion, y lo importamos de Context
 import { TextContextProvider } from "./Context/TextContext";
+import { ReviewContextProvider } from "./Context/ReviewContext";
 
 export const App = () => {
   return (
@@ -15,9 +16,11 @@ export const App = () => {
       <NavBar></NavBar>
 
       {/* Le pasamos el provider a el main, que es donde se ejecutara el contexto global, en otras circunstancias seria el App, pero aqui nadamas cambia el main */}
-      <TextContextProvider>
-        <PrincipalMain></PrincipalMain>
-      </TextContextProvider>
+      <ReviewContextProvider>
+        <TextContextProvider>
+          <PrincipalMain></PrincipalMain>
+        </TextContextProvider>
+      </ReviewContextProvider>
 
       {/* Renderizamos la UI */}
       <Footer></Footer>
