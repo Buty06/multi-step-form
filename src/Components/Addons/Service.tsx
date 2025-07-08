@@ -24,21 +24,27 @@ export const Service: React.FC<props> = ({ title, description, price }) => {
     const value = e.target.checked;
 
     setIsChecked(value);
+
+    isChecked &&
+      setReview((prev: object) => ({
+        ...prev,
+        [e.target.name]: reviewService,
+      }));
   };
 
-  const active_checkbox = (e?: React.MouseEvent<HTMLLabelElement>) => {
-    if (!isChecked) return "service";
+  console.log(review);
 
-    console.log(e);
+  const active_checkbox = () => {
+    if (!isChecked) return "service";
 
     return "service active_checkbox";
   };
 
   return (
-    <label className={active_checkbox()} onClick={(e) => active_checkbox(e)}>
+    <label className={active_checkbox()}>
       <input
         type="checkbox"
-        name="checkbox"
+        name={title}
         className="checkbox"
         onChange={(e) => checked(e)}
       />
