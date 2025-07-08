@@ -23,7 +23,7 @@ export const Service: React.FC<props> = ({ title, description, price }) => {
   };
 
   return (
-    <article className={active_checkbox()}>
+    <label className={active_checkbox()}>
       <input
         type="checkbox"
         name="checkbox"
@@ -38,6 +38,6 @@ export const Service: React.FC<props> = ({ title, description, price }) => {
       </section>
 
       <p className="price"> {price} </p>
-    </article>
+    </label>
   );
 };
