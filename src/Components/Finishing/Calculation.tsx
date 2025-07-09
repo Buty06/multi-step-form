@@ -23,7 +23,5 @@ export const Calculation = () => {
     total += number;
   });
 
-  jsonDecision === "month"
-    ? console.log(`+$${total}/mo`)
-    : console.log(`$${total}/yr`);
+  return jsonDecision === "month" ? `+$${total}/mo` : `$${total}/yr`;
 };
