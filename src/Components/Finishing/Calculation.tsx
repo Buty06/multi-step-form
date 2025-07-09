@@ -7,11 +7,18 @@ export const Calculation = () => {
     review: object;
   };
 
-  console.log(review);
-
   let total = 0;
 
   Object.values(review).forEach((value) => {
-    console.log(value);
+    const price: string = value.price;
+    const strNumbers: string[] | null = price.match(/\d+/g);
+
+    if (!strNumbers) return;
+
+    const number: number = Number(strNumbers[0]);
+
+    total += number;
   });
+
+  console.log(total);
 };
