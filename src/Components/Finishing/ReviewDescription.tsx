@@ -12,7 +12,8 @@ export const ReviewDescription = () => {
 
   if (!Object.values(review)[0]) return;
 
-  const { price, title } = Object.values(review)[0] as planType;
+  const [plan, ...rest] = Object.values(review);
+  const { price, title } = plan as planType;
 
   return (
     <article>
