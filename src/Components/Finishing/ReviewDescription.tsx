@@ -15,7 +15,7 @@ export const ReviewDescription = () => {
   const [plan, ...rest] = Object.values(review);
   const { price, title } = plan as planType;
 
-  console.log(review.length);
+  console.log(Object.keys(review));
 
   return (
     <article>
