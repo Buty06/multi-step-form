@@ -15,6 +15,8 @@ export const ReviewDescription = () => {
   const [plan, ...rest] = Object.values(review);
   const { price, title } = plan as planType;
 
+  console.log(review.length);
+
   return (
     <article>
       <section>
@@ -26,6 +28,13 @@ export const ReviewDescription = () => {
 
         <p> {price} </p>
       </section>
+
+      {rest.map((element: planType, index) => (
+        <section key={index}>
+          <h3>{element.price}</h3>
+          <p>{element.title}</p>
+        </section>
+      ))}
     </article>
   );
 };
