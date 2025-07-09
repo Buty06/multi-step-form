@@ -45,8 +45,6 @@ export const Service: React.FC<props> = ({ title, description, price }) => {
     return "service active_checkbox";
   };
 
-  console.log(review);
-
   return (
     <label className={active_checkbox()}>
       <input
