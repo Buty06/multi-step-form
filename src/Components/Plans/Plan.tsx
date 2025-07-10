@@ -9,7 +9,7 @@ interface Props {
 }
 
 export const Plan: React.FC<Props> = ({ title, price, src }) => {
-  const { setReview } = useContext(ReviewContext)! as {
+  const { setReview } = useContext(ReviewContext) as {
     setReview: (value: object) => void;
   };
 

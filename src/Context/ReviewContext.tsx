@@ -5,9 +5,7 @@ type ReviewContextType = {
   setReview: (value: object) => void;
 };
 
-export const ReviewContext = createContext<ReviewContextType | undefined>(
-  undefined
-);
+export const ReviewContext = createContext<ReviewContextType | false>(false);
 
 export const ReviewContextProvider = ({
   children,

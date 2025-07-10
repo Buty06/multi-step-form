@@ -11,7 +11,7 @@ interface props {
 export const Service: React.FC<props> = ({ title, description, price }) => {
   const [isChecked, setIsChecked] = useState(Boolean);
 
-  const { setReview, review } = useContext(ReviewContext)! as {
+  const { setReview } = useContext(ReviewContext) as {
     setReview: (value: object) => void;
     review: object;
   };

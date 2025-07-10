@@ -3,7 +3,7 @@ import { ReviewContext } from "../../Context/ReviewContext";
 import { TextContext } from "../../Context/TextContext";
 
 export const Calculation = () => {
-  const { review } = useContext(ReviewContext)! as {
+  const { review } = useContext(ReviewContext) as {
     // setReview : (value:object) => void
     review: object;
   };
