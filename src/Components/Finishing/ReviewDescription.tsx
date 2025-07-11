@@ -9,7 +9,7 @@ interface planType {
 
 let price: string | undefined;
 let title: string | undefined;
-let rest: planType[] = [];
+let outsideRest: planType[] = [];
 
 export const ReviewDescription = () => {
   const { review } = useContext(ReviewContext) as { review: object };
@@ -19,8 +19,8 @@ export const ReviewDescription = () => {
     isReviewVoid = true;
   } else {
     const [plan, ...rest] = Object.values(review);
-    // const { price, title } = plan as planType;
 
+    outsideRest = [...rest];
     price = plan.price;
     title = plan.title;
   }
@@ -28,7 +28,11 @@ export const ReviewDescription = () => {
   return (
     <article>
       {isReviewVoid ? (
-        <h2>Holaaaaa</h2>
+        <section>
+          <h2>You must select a plan</h2>
+
+          <Link to="/plans"> PLans </Link>
+        </section>
       ) : (
         <>
           <section>
@@ -41,7 +45,7 @@ export const ReviewDescription = () => {
             <p> {price} </p>
           </section>
 
-          {rest.map((element: planType, index) => (
+          {outsideRest.map((element: planType, index) => (
             <section key={index}>
               <h3>{element.price}</h3>
               <p>{element.title}</p>
