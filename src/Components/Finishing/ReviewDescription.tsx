@@ -47,8 +47,8 @@ export const ReviewDescription = () => {
 
           {outsideRest.map((element: planType, index) => (
             <section key={index}>
-              <h3>{element.price}</h3>
-              <p>{element.title}</p>
+              <h3>{element.title}</h3>
+              <p>{element.price}</p>
             </section>
           ))}
         </>
