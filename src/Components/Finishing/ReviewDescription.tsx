@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { ReviewContext } from "../../Context/ReviewContext";
 import { Link } from "react-router-dom";
 
@@ -7,18 +7,23 @@ interface planType {
   price: string;
 }
 
+let price: string | undefined;
+let title: string | undefined;
+let rest: planType[] = [];
+
 export const ReviewDescription = () => {
-  const [isReviewVoid, setIsReviewVoid] = useState<Boolean>(false);
   const { review } = useContext(ReviewContext) as { review: object };
+  let isReviewVoid = false;
 
   if (!Object.values(review).length) {
-    setIsReviewVoid(true);
+    isReviewVoid = true;
+  } else {
+    const [plan, ...rest] = Object.values(review);
+    // const { price, title } = plan as planType;
+
+    price = plan.price;
+    title = plan.title;
   }
-
-  if (!Object.values(review)[0]) return;
-
-  const [plan, ...rest] = Object.values(review);
-  const { price, title } = plan as planType;
 
   return (
     <article>
@@ -47,22 +52,3 @@ export const ReviewDescription = () => {
     </article>
   );
 };
-
-{
-  /* <section>
-        <div className="">
-          <h2>{title}</h2>
-
-          <Link to="/plans"> Change</Link>
-        </div>
-
-        <p> {price} </p>
-      </section>
-
-      {rest.map((element: planType, index) => (
-        <section key={index}>
-          <h3>{element.price}</h3>
-          <p>{element.title}</p>
-        </section>
-      ))} */
-}
