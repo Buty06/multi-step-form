@@ -1,0 +1,16 @@
+.review_total_container {
+  padding: 0rem 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review_total_title {
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.677);
+}
+
+.review_total_price {
+  font-weight: 700;
+}

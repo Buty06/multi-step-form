@@ -3,6 +3,7 @@ import { TextContext } from "../../Context/TextContext";
 import { Calculation } from "./Calculation";
 import { planes } from "../../data/textos.json";
 import { ReviewContext } from "../../Context/ReviewContext";
+import "../../Styles/Finishing/ReviewTotal.css";
 
 type Period = "month" | "year";
 
@@ -16,9 +17,9 @@ export const ReviewTotal = () => {
   if (!Object.values(review).length) return;
 
   return (
-    <section>
-      <h2> {title} </h2>
-      <p> {total} </p>
+    <section className="review_total_container">
+      <h2 className="review_total_title"> {title} </h2>
+      <p className="review_total_price"> {total} </p>
     </section>
   );
 };
