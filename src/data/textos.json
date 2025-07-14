@@ -40,25 +40,11 @@
         }
       ],
 
-      "finishing": [
-        {
-          "title": "Arcade (Monthly)",
-          "subtitle": "Change",
-          "price": "$9/mo"
-        },
-
-        {
-          "service1": "Online service",
-          "service2": "Large storage",
-          "addPrice1": "+$1/mo",
-          "addPrice2": "+$2/mo"
-        },
-
-        {
-          "title": "Total (per month)",
-          "totalPrice": "+$12/mo"
-        }
-      ],
+      "finishing": {
+        "title": "Arcade (Monthly)",
+        "subtitle": "Change",
+        "price": "$9/mo"
+      },
 
       "plan": [
         {
@@ -117,25 +103,10 @@
         }
       ],
 
-      "finishing": [
-        {
-          "title": "Arcade (Yearly)",
-          "subtitle": "Change",
-          "price": "$90/mo"
-        },
-
-        {
-          "service1": "Online service",
-          "service2": "Large storage",
-          "addPrice1": "+$10/mo",
-          "addPrice2": "+$20/mo"
-        },
-
-        {
-          "title": "Total (per year)",
-          "totalPrice": "+$120/mo"
-        }
-      ]
+      "finishing": {
+        "title": "Total (per year)",
+        "totalPrice": "+$120/mo"
+      }
     }
   }
 }

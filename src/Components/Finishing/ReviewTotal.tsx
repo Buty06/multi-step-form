@@ -1,28 +1,21 @@
 import { useContext } from "react";
-import { ReviewContext } from "../../Context/ReviewContext";
+import { TextContext } from "../../Context/TextContext";
+import { Calculation } from "./Calculation";
+import { planes } from "../../data/textos.json";
 
-let numbersArr: string[] = [];
-let total: number = 0;
+type Period = "month" | "year";
 
 export const ReviewTotal = () => {
-  const { review } = useContext(ReviewContext) as { review: object };
+  const { jsonDecision } = useContext(TextContext)! as { jsonDecision: Period };
 
-  Object.values(review).forEach((value) => {
-    numbersArr = [...numbersArr, value.price.match(/\d/g)[0]];
-  });
+  const title = planes[jsonDecision].finishing.title;
 
-  console.log(numbersArr);
-
-  numbersArr.forEach((value) => {
-    total += Number(value);
-  });
-
-  console.log(total);
+  const total = Calculation();
 
   return (
     <section>
-      <h2></h2>
-      <p></p>
+      <h2> {title} </h2>
+      <p> {total} </p>
     </section>
   );
 };
