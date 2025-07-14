@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { ReviewContext } from "../../Context/ReviewContext";
 import { Link } from "react-router-dom";
+import "../../Styles/Finishing/ReviewDescription.css";
 
 interface planType {
   title: string;
@@ -26,7 +27,7 @@ export const ReviewDescription = () => {
   }
 
   return (
-    <article>
+    <article className="review_description_container">
       {isReviewVoid ? (
         <section>
           <h2>You must select a plan</h2>
@@ -35,19 +36,22 @@ export const ReviewDescription = () => {
         </section>
       ) : (
         <>
-          <section>
-            <div className="">
+          <section className="review_description_plan">
+            <div>
               <h2>{title}</h2>
 
-              <Link to="/plans"> Change</Link>
+              <Link className="review_plan_change" to="/plans">
+                {" "}
+                Change
+              </Link>
             </div>
 
-            <p> {price} </p>
+            <p className="review_plan_price"> {price} </p>
           </section>
 
           {outsideRest.map((element: planType, index) => (
-            <section key={index}>
-              <h3>{element.title}</h3>
+            <section key={index} className="review_description_service">
+              <h3 className="review_service_title">{element.title}</h3>
               <p>{element.price}</p>
             </section>
           ))}

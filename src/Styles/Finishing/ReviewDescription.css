@@ -1,0 +1,39 @@
+.review_description_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: rgb(239, 239, 239);
+  color: rgba(0, 0, 0, 0.882);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.review_description_plan {
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.246);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0.7rem;
+}
+
+.review_plan_change {
+  color: rgba(0, 0, 0, 0.654);
+  font-weight: 600;
+}
+
+.review_plan_price {
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.review_description_service {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review_service_title {
+  color: rgba(0, 0, 0, 0.668);
+}
