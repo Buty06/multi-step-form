@@ -3,11 +3,15 @@ import { useLocation, useNavigate } from "react-router-dom";
 
 // Importamos los estilos principales XD
 import "../Styles/Footer.css";
+import { useContext } from "react";
+import { ValidationContext } from "../Context/ValidationContext";
 
 // Creamos un array com los path de las ruta spara pasarselo a la funcion despues
 const steps = ["/", "/plans", "/addons", "/finishing"];
 
 export const Footer: React.FC = () => {
+  const { disabled } = useContext(ValidationContext)!;
+
   // Llamamos denuevo al pathname del useLocation()
   const { pathname } = useLocation();
 
@@ -30,7 +34,11 @@ export const Footer: React.FC = () => {
   return (
     <footer className="footer">
       {/* Next Button */}
-      <button onClick={nextStep} className="footer_next_button">
+      <button
+        onClick={nextStep}
+        className="footer_next_button"
+        disabled={disabled}
+      >
         Next Step
       </button>
 
