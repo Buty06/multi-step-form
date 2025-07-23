@@ -5,17 +5,18 @@
   justify-content: center;
   gap: 2rem;
   background-color: rgb(227, 227, 227);
-  padding: 1rem 2rem;
+  padding: 0.5rem 1.5rem;
   border-radius: 7px;
 }
 
 .selection_btn {
   font-size: 1rem;
   font-weight: 500;
-  color: gray;
-  background-color: transparent;
+  color: rgb(19, 19, 19);
+  background-color: gray;
+  padding: 0.3rem 0.7rem;
   transition: all 0.3s ease;
-
+  border-radius: 7px;
   &:hover {
     color: rgb(57, 10, 114);
   }

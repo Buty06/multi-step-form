@@ -2,6 +2,7 @@
 import { useContext, useState } from "react";
 import "../../Styles/PersonalInfo/Inputs.css";
 import { ValidationContext } from "../../Context/ValidationContext";
+import { useLocalStorage } from "../../hooks/useLocalStorage";
 
 // definimos los tipos de las props, en este caso todas son strings
 interface Props {
@@ -18,6 +19,7 @@ export const Inputs: React.FC<Props> = ({
 }) => {
   const [messageError, setmessageError] = useState("");
   const { setDisabled } = useContext(ValidationContext)!;
+  const [value, setValue] = useLocalStorage(type, "");
 
   const onInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const inputValue = event.target.value;
@@ -58,6 +60,8 @@ export const Inputs: React.FC<Props> = ({
       default:
         break;
     }
+
+    setValue(inputValue);
   };
 
   return (
@@ -70,6 +74,7 @@ export const Inputs: React.FC<Props> = ({
           required
           className="main_input"
           onChange={(e) => onInputChange(e)}
+          value={value}
         />
 
         <p className="message_error">{messageError}</p>
